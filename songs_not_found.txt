@@ -1,9 +1,5 @@
-the hills, solence ---
-toxic, solence ---
-all units needed, video helper ---
-clouds of regret, video helper ---
-number one, louis, piffler ---
-number two, louis, piffler ---
+number one, louis, piffler --- not found on spotify
+number two, louis, piffler --- not found on spotify
 boncon, varsain ---
 midnight sun, lil jaico ---
 miss the rage, zarby ---
@@ -19,7 +15,7 @@ theme from dissect MS1, birocratic ---
 theme from dissect S3, birocratic ---
 theme from dissect S4, birocratic ---
 theme from dissect S10, birocratic ---
-rush e piano, andrei eusebiu
+rush e piano, andrei eusebiu ---
 pure gamma binaural beats (40hz), pure binaural beats
 meet the frownies, lovely bastards, onstaden
 jingle jangle jingle, kay kyser: {
@@ -27,29 +23,15 @@ jingle jangle jingle, kay kyser: {
     alternative ver
     trudy erwin, harry babbitt
     i got spurs that
+    ...
 }
 red sun in the sky full bass
 red sun in the sky (enhanced treble)
 led zepagain stairway to heaven
-not found frigatte la fayete ---
+frigatte 'la fayete', ThePlasmas ---
 
 -- Missing playlists
-elden ring base game OST
-elden ring dlc OST
-medieval eminem
-par de olhos
-helldivers 2 ost
-borderlands 2 ost
-hollow knight base game ost
-hollow knight grimm troupe ost
-bloodborne base game
-bloodborne dlc
-men i trust playlists {
-    white one 
-    blue one
-}
-castlevania https://www.youtube.com/playlist?list=OLAK5uy_n3GmChpirlxyMDUGFqF2FMH9AivanNT-s
-hawaii part 2 https://www.youtube.com/playlist?list=OLAK5uy_k2F6ziLkqoGFxaiOjnY9YNShP3asV-K5Y
+none
 
 -- songs removed
 grove a go go (night tempo), anri
