@@ -1,3 +1,4 @@
+-- important missing
 number one, louis, piffler --- not found on spotify
 number two, louis, piffler --- not found on spotify
 boncon, varsain ---
@@ -6,29 +7,40 @@ miss the rage, zarby ---
 tension - instrumental, P nando ---
 let go - slowed, dybbuk ---
 no russian, V.CT.R ---
-air max violin, blfboy
-little dark age, vladiniero
-ching cheng hanji, memegod
 korabl' (russian), ssshhiiittt! ---
-molchat doma - dark version, temperex
 theme from dissect MS1, birocratic ---
 theme from dissect S3, birocratic ---
 theme from dissect S4, birocratic ---
 theme from dissect S10, birocratic ---
-rush e piano, andrei eusebiu ---
+frigatte 'la fayete', ThePlasmas ---
+
+-- non important missing
 pure gamma binaural beats (40hz), pure binaural beats
+molchat doma - dark version, temperex
 meet the frownies, lovely bastards, onstaden
-jingle jangle jingle, kay kyser: {
-    2024
-    alternative ver
-    trudy erwin, harry babbitt
-    i got spurs that
-    ...
-}
+air max violin, blfboy
+little dark age, vladiniero
+ching cheng hanji, memegod
+rush e piano, andrei eusebiu 
+jingle jangle jingle, kay kyser: 
+    2024 remastered
+    2024 remastered (i got spurs)
+    alternate take
+    trudy erwin, harry babbitt 1995 remastered
+    (i got spurs that)
+    (i got spurs)
+    (i got spurs that) his original orchestra
+
 red sun in the sky full bass
 red sun in the sky (enhanced treble)
 led zepagain stairway to heaven
-frigatte 'la fayete', ThePlasmas ---
+
+-- removed from yt
+buttercup:
+old link
+https://youtu.be/YAtc0d4fORg?si=nAJWqKPYolLvvznp,
+new link in case of error
+https://youtu.be/b9mHKXR9Opw?si=P9HVP3GoLzgWHhYM,
 
 -- Missing playlists
 none
