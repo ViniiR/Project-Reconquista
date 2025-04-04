@@ -10,7 +10,7 @@ case "$1" in
                 continue
             fi
             yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$songs_filepath" "${line//\,/}"
-        done < ./song_list.csv
+        done < ./list.csv.txt
     ;;
     "--playlists")
         next_is_helldivers=false
@@ -30,14 +30,14 @@ case "$1" in
             yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$playlists_filepath" "${line//\,/}"
         done < ./playlists_list.csv
     ;;
-    "--titles-only")
-        while IFS= read -r line; do
-            if [[ "$line" == *"#"* ]]; then
-                continue
-            fi
-            yt-dlp --print title "${line//\,/}" >> ./songs_titles.txt
-        done < ./song_list.csv
-    ;;
+    # "--titles-only")
+    #     while IFS= read -r line; do
+    #         if [[ "$line" == *"#"* ]]; then
+    #             continue
+    #         fi
+    #         yt-dlp --print title "${line//\,/}" >> ./songs_titles.txt
+    #     done < ./song_list.csv
+    # ;;
     *) 
         echo "No option specified"
         exit 0
