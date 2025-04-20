@@ -9,7 +9,7 @@ case "$1" in
             if [[ "$line" == *"#"* ]]; then
                 continue
             fi
-            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$songs_filepath" "${line//\,/}"
+            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$songs_filepath" "${line//\,/}" 2>> songs_err.log
         done < ./list.csv.txt
     ;;
     "--playlists")
@@ -23,7 +23,7 @@ case "$1" in
                 continue
             fi
             if [[ "$next_is_helldivers" == true ]]; then
-                yt-dlp --match-filter "title~=.*Original Game Soundtrack.*" -f bestaudio --extract-audio --audio-format opus --progress -o "$playlists_filepath" "${line//\,/}"
+                yt-dlp --match-filter "title~=.*Original Game Soundtrack.*" -f bestaudio --extract-audio --audio-format opus --progress -o "$playlists_filepath" "${line//\,/}" 2>> playlists_err.log
                 next_is_helldivers=false
                 continue
             fi
@@ -35,7 +35,7 @@ case "$1" in
     #         if [[ "$line" == *"#"* ]]; then
     #             continue
     #         fi
-    #         yt-dlp --print title "${line//\,/}" >> ./songs_titles.txt
+    #         yt-dlp --print title "${line//\,/}" >> ./songs_titles.txt 2>> titles_err.log
     #     done < ./song_list.csv
     # ;;
     *) 
