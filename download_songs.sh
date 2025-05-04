@@ -27,7 +27,7 @@ case "$1" in
                 next_is_helldivers=false
                 continue
             fi
-            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$playlists_filepath" "${line//\,/}"
+            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$playlists_filepath" "${line//\,/}" 2>> playlists_err.log
         done < ./playlists_list.csv
     ;;
     # "--titles-only")
