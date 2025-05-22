@@ -9,7 +9,7 @@ case "$1" in
             if [[ "$line" == *"#"* ]]; then
                 continue
             fi
-            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$songs_filepath" "${line//\,/}" 2>> songs_err.log
+            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$songs_filepath" "${line//\,/}" 2>> ./songs_err.log
         done < ./list.csv.txt
     ;;
     "--playlists")
@@ -35,7 +35,7 @@ case "$1" in
     #         if [[ "$line" == *"#"* ]]; then
     #             continue
     #         fi
-    #         yt-dlp --print title "${line//\,/}" >> ./songs_titles.txt 2>> titles_err.log
+    #         yt-dlp --print title "${line//\,/}" >> ./songs_titles.txt 2>> ./titles_err.log
     #     done < ./song_list.csv
     # ;;
     *) 
