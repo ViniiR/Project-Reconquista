@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 songs_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/%(title)s[%(autonumber)d].%(ext)s"
-playlists_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/playlists/%(playlist_title)/%(title)s.%(ext)s"
+songs_custom_filepath="/home/vinii/projects/Project-Reconquista/temp/%(title)s[%(autonumber)d].%(ext)s"
+playlists_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/playlists/%(playlist_title)s/%(title)s[%(autonumber)d].%(ext)s"
 
 case "$1" in
     "--songs")
@@ -17,7 +18,7 @@ case "$1" in
             if [[ "$line" == *"#"* ]]; then
                 continue
             fi
-            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$songs_filepath" "${line//\,/}" 2>> ./logs/custom_songs_err.log
+            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$songs_custom_filepath" "${line//\,/}" 2>> ./logs/custom_songs_err.log
         done < "./$2"
     ;;
     "--playlists")
@@ -31,6 +32,7 @@ case "$1" in
                 continue
             fi
             if [[ "$next_is_helldivers" == true ]]; then
+                # WARNING: does not download the The Illuminate Cult song (do manually idgaf)
                 yt-dlp --match-filter "title~=.*Original Game Soundtrack.*" -f bestaudio --extract-audio --audio-format opus --progress -o "$playlists_filepath" "${line//\,/}" 2>> ./logs/playlists_err.log
                 next_is_helldivers=false
                 continue
