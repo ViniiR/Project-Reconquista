@@ -1,10 +1,9 @@
--- important missing
+-- TODO: important missing
 number one, louis, piffler --- not found on spotify
 number two, louis, piffler --- not found on spotify
 boncon, varsain ---
 midnight sun, lil jaico ---
 miss the rage, zarby ---
-tension - instrumental, P nando ---
 let go - slowed, dybbuk ---
 no russian, V.CT.R ---
 korabl' (russian), ssshhiiittt! ---
@@ -39,7 +38,7 @@ led zepagain stairway to heaven
 none
 
 -- removed from yt
-# XO Tour Llif3 (Instrumental), https://youtu.be/LJhOsKYnNkA?si=z_4FlhL8JsR-y_3I,
+# XO Tour Llif3 (Instrumental), https://youtu.be/LJhOsKYnNkA?si=z_4FlhL8JsR-y_3I, (was a version duplicate, unreplaced)
 # When It's Over, https://youtu.be/7ULjRT53kAA?si=-eZKG-60ZUB2Uye6, (replaced)
 # Highway Star, https://youtu.be/lC4gKA4ezcU?si=3mTCQdJlwMHRJPNk, (replaced by remastered)
 
