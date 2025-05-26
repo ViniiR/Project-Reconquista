@@ -4,13 +4,15 @@ songs_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/%(titl
 songs_custom_filepath="/home/vinii/projects/Project-Reconquista/temp/%(title)s[%(autonumber)d].%(ext)s"
 playlists_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/playlists/%(playlist_title)s/%(title)s[%(autonumber)d].%(ext)s"
 
+yt_dlp_args=(-f "bestaudio" --extract-audio --audio-format "opus" --progress --embed-metadata --embed-thumbnail)
+
 case "$1" in
     "--songs")
         while IFS= read -r line; do
             if [[ "$line" == *"#"* ]]; then
                 continue
             fi
-            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$songs_filepath" "${line//\,/}" 2>> ./logs/songs_err.log
+            yt-dlp "${yt_dlp_args[@]}" -o "$songs_filepath" "${line//\,/}" 2>> ./logs/songs_err.log
         done < ./list.csv.txt
     ;;
     "--custom-list")
@@ -18,7 +20,7 @@ case "$1" in
             if [[ "$line" == *"#"* ]]; then
                 continue
             fi
-            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$songs_custom_filepath" "${line//\,/}" 2>> ./logs/custom_songs_err.log
+            yt-dlp "${yt_dlp_args[@]}" -o "$songs_custom_filepath" "${line//\,/}" 2>> ./logs/custom_songs_err.log
         done < "./$2"
     ;;
     "--playlists")
@@ -33,11 +35,11 @@ case "$1" in
             fi
             if [[ "$next_is_helldivers" == true ]]; then
                 # WARNING: does not download the The Illuminate Cult song (do manually idgaf)
-                yt-dlp --match-filter "title~=.*Original Game Soundtrack.*" -f bestaudio --extract-audio --audio-format opus --progress -o "$playlists_filepath" "${line//\,/}" 2>> ./logs/playlists_err.log
+                yt-dlp --match-filter "title~=.*Original Game Soundtrack.*" "${yt_dlp_args[@]}" -o "$playlists_filepath" "${line//\,/}" 2>> ./logs/playlists_err.log
                 next_is_helldivers=false
                 continue
             fi
-            yt-dlp -f bestaudio --extract-audio --audio-format opus --progress -o "$playlists_filepath" "${line//\,/}" 2>> ./logs/playlists_err.log
+            yt-dlp "${yt_dlp_args[@]}" -o "$playlists_filepath" "${line//\,/}" 2>> ./logs/playlists_err.log
         done < ./playlists_list.csv
     ;;
     # "--titles-only")
