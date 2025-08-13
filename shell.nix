@@ -8,6 +8,7 @@ in
     packages = with pkgs; [
       yt-dlp
       ffmpeg
+      mutagen
     ];
 
     env = {
