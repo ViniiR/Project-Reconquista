@@ -4,7 +4,7 @@ songs_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/%(titl
 songs_custom_filepath="/home/vinii/projects/Project-Reconquista/temp/%(title)s[%(autonumber)d].%(ext)s"
 playlists_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/playlists/%(playlist_title)s/%(title)s[%(autonumber)d].%(ext)s"
 
-yt_dlp_args=(-f "bestaudio" --extract-audio --audio-format "opus" --progress --embed-metadata --embed-thumbnail)
+yt_dlp_args=(-f "bestaudio" --extract-audio --audio-format "mp3" --progress --embed-metadata --embed-thumbnail)
 
 case "$1" in
     "--songs")
