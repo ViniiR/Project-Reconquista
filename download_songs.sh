@@ -4,7 +4,11 @@ songs_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/%(titl
 songs_custom_filepath="/home/vinii/projects/Project-Reconquista/temp/%(title)s[%(autonumber)d].%(ext)s"
 playlists_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/playlists/%(playlist_title)s/%(title)s[%(autonumber)d].%(ext)s"
 
-yt_dlp_args=(-f "bestaudio" --extract-audio --audio-format "mp3" --progress --embed-metadata --embed-thumbnail)
+# kotlin
+# """--ppa "ffmpeg: -c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"""""
+ffmpeg_crop="ffmpeg: -c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\""
+
+yt_dlp_args=(-f "bestaudio" --extract-audio --audio-format "mp3" --progress --embed-metadata --embed-thumbnail --ppa "$ffmpeg_crop")
 
 case "$1" in
     "--songs")
