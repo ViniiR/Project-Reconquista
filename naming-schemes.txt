@@ -1,0 +1,6 @@
+Major:
+    Granada -
+    America - (latest)
+Minor:
+    Melilla -
+    Ceuta   - (latest)
