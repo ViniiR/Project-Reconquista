@@ -1,1 +1,5 @@
 files and directories must have character like \s & : removed for android
+
+important: if one or more songs are missing the likely result is duplicate names
+
+unresolved duplicate names: "Hit the Road Jack" and "Hit The Road Jack", not an issue on linux but it is on android.
