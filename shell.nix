@@ -9,6 +9,7 @@ in
       yt-dlp
       ffmpeg
       mutagen
+      deno
     ];
 
     env = {
