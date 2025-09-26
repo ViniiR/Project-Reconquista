@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # TODO: autonumber does not actually work, it gives up downloading if a file of same name exists
-songs_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/%(title)s[%(autonumber)d].%(ext)s"
-songs_custom_filepath="/home/vinii/projects/Project-Reconquista/temp/%(title)s[%(autonumber)d].%(ext)s"
-playlists_filepath="/home/vinii/projects/Project-Reconquista/downloaded_songs/playlists/%(playlist_title)s/%(title)s[%(autonumber)d].%(ext)s"
+songs_filepath="/home/vinii/Documents/projects/Project-Reconquista/downloaded_songs/%(title)s[%(autonumber)d].%(ext)s"
+songs_custom_filepath="/home/vinii/Documents/projects/Project-Reconquista/temp/%(title)s[%(autonumber)d].%(ext)s"
+playlists_filepath="/home/vinii/Documents/projects/Project-Reconquista/downloaded_songs/playlists/%(playlist_title)s/%(title)s[%(autonumber)d].%(ext)s"
 
 # kotlin
 # """--ppa "ffmpeg: -c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"""""
